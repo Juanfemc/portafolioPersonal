@@ -1,0 +1,181 @@
+:root{
+    --primary-color: rgb(241, 241, 241);
+    --secundary-color: #1C213F; 
+    --tertiary-color: #18b07d; 
+}
+body{
+    font-size: 18px;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Roboto', sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    margin-bottom: 30px;
+}
+.profile{
+    margin-top: -150px;
+    width: 30%;
+    text-align: center;
+}
+.social{
+    font-size: 27px;
+}
+.social a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #000;
+}
+.social a:hover{
+    color: var(--tertiary-color);
+}
+.banner{
+    background: url("../../../img/flayer.jpg");
+    height: 350px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container-aboutme{
+    display: flex;
+
+}
+.container-habilidades{
+    background-color: rgba(228, 228, 228, 0.418);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 35px;
+}
+
+
+.footer-habilidad{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.foto img{
+    width: 250px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+}
+
+.project img{
+    width: 100%;
+}
+.descripcion-projects{
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(28, 33, 63,.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.imagen-projects{
+    position: relative; 
+    cursor: pointer;
+}
+.imagen{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+.imagen:hover{
+    z-index: 0;
+}
+.descripcion-projects:hover{
+    z-index: 1;
+    animation-name: project-descripcion;
+    -webkit-animation: project-descripcion;
+    animation-duration: 1s;
+}
+
+.project{
+    position: relative;
+}
+
+.container-projects img{
+    width: 100%;
+}
+
+
+.profesion{
+    font-weight: bold;
+}
+
+.title-project{}
+.footer{
+    background-color: var(--secundary-color);
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+/* ========== BACKGROUND COLORS ============= */
+.sb-color{
+    background-color: var(--secundary-color);
+}
+
+
+
+
+.active{
+    color: var(--tertiary-color)!important;
+}
+.container-habilidades .fab{
+    display: block;
+}
+
+
+
+
+@keyframes project-descripcion {
+    from{ transform:rotateY(0) ; -webkit-transform:rotateY(0) ; -moz-transform:rotateY(0) ; -ms-transform:rotateY(0) ; -o-transform:rotateY(0) ; }
+    to{ transform:rotateY(360deg) ; -webkit-transform:rotateY(360deg) ; -moz-transform:rotateY(360deg) ; -ms-transform:rotateY(360deg) ; -o-transform:rotateY(360deg) ; }
+}
+
+/* ================== MEDIA QUERIES =============== */
+
+@media only screen and (max-width: 700px) {
+    .profile{
+        width: 70%;
+        text-align: center;
+    }
+    .section{
+        padding: 10px;
+    }
+    .titulo-habilidades{
+        margin-top: 40px;
+    }
+    .container-habilidades{
+        padding: 20px 5px;
+    }
+    footer{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 700px) {
+
+}
+  
